@@ -1,0 +1,25 @@
+<div class="controlers">
+  <button
+    class="controlers__btn btn btn-outline-light"
+    (click)="onStart()"
+    [disabled]="timerActive"
+  >
+    start
+  </button>
+
+  <button
+    class="controlers__btn btn btn-outline-light"
+    (click)="onPause()"
+    [disabled]="!timerActive"
+  >
+    pause
+  </button>
+
+  <button
+    class="controlers__btn btn btn-outline-light"
+    (click)="onReset()"
+    [disabled]="!timer"
+  >
+    reset
+  </button>
+</div>
